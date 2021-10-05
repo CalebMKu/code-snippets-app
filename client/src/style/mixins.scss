@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+@mixin btn() {
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  color: var(--light-color);
+  background: var(--primary-color);
+
+  &:hover {
+    box-shadow: var(--box-shadow);
+  }
+}
+
+@mixin link() {
+  color: var(--text-link-color);
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

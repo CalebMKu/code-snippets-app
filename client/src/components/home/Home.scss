@@ -1,0 +1,47 @@
+@import "../../style/variables.scss";
+@import "../../style/mixins.scss";
+
+.home {
+  .btn-editor-toggle {
+    @include btn();
+    background: var(--danger-color);
+  }
+
+  .btn-save {
+    @include btn();
+    background: var(--danger-color);
+  }
+
+  .snippet-form-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .snippet-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+  }
+
+  .snippet-form > input {
+    background: var(--lightgray-color);
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 2px;
+  }
+
+  .snippet-form > textarea {
+    background: var(--lightgray-color);
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 2px;
+    min-height: 400px;
+    max-height: 450px;
+    min-width: 400px;
+    max-width: 400px;
+  }
+}
+
